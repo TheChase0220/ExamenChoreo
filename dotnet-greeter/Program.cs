@@ -28,8 +28,8 @@ namespace GreeterApp
                     var name = request.QueryString.Get("name");
                     var age = request.QueryString.Get("age");
                     var profession = request.QueryString.Get("profession");
-                    var place = request.QueryString.Get("place");
-                    var message = $"Hello, my name is {name}, I am {age} years old. I am a {profession} at {place}";
+                    var country = request.QueryString.Get("country");
+                    var message = $"Hello, my name is {name}, I am {age} years old. I am a {profession} at {country}";
 
                     response.ContentType = "text/plain";
                     response.ContentLength64 = message.Length;
